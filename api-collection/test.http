@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:3000/api
+
+# Comments
+
+# @name getAllComments
+GET {{baseUrl}}/categories
+
+#####
+
+# @name addNewComment
+
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+    "body": "SANG",
+    "postId": 1
+}
+
+#####
+
+# @name updateComment
+
+PATCH  {{baseUrl}}/categories/2
+Content-Type: application/json
+
+{
+    "body": "Thuy"
+}
+
+#####
+
+# @name deleteComment
+
+DELETE   {{baseUrl}}/categories/2
